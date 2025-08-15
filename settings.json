@@ -40,7 +40,7 @@
   "offline_notification_enable": "true",
   "offline_notification_interval": "43200000",
   "user_auth_mode": "mikrotik",
-  "server_port": "3003",
+  "server_port": "3001",
   "logo_filename": "logo.png",
   "payment_bank_name": "BRI",
   "payment_account_number": "064901001164532",
