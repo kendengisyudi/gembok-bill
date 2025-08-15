@@ -1,0 +1,78 @@
+{
+  "admins.0": "6281259872053",
+  "admin_enabled": "true",
+  "admin_username": "admin",
+  "admin_password": "admin",
+  "genieacs_url": "http://103.197.191.210:7557",
+  "genieacs_username": "yudili",
+  "genieacs_password": "T@gogou2719",
+  "mikrotik_host": "192.168.8.1",
+  "mikrotik_port": "8728",
+  "mikrotik_user": "yudili",
+  "mikrotik_password": "T@gogou2719",
+  "main_interface": "ether1-ISP",
+  "pppoe_monitor_enable": "true",
+  "technician_numbers.0": "6281259872053",
+  "technician_numbers.1": "6281259872053",
+  "technician_group_id": "120363029715729111@g.us",
+  "whatsapp_session_path": "./whatsapp-session",
+  "whatsapp_keep_alive": "true",
+  "whatsapp_restart_on_error": "true",
+  "whatsapp_log_level": "silent",
+  "pppoe_monitor_interval": "60000",
+  "rx_power_warning": "-40",
+  "rx_power_critical": "-45",
+  "rx_power_notification_enable": "true",
+  "rx_power_notification_interval": "300000",
+  "company_header": "🏢 ARKNET DIGITAL 🏢",
+  "footer_info": "High Speed Internet Service",
+  "customerPortalOtp": "true",
+  "otp_length": "4",
+  "otp_expiry_minutes": "5",
+  "server_port": "3003",
+  "server_host": "localhost",
+  "pppoe_notifications.enabled": "true",
+  "pppoe_notifications.loginNotifications": "true",
+  "pppoe_notifications.logoutNotifications": "true",
+  "pppoe_notifications.includeOfflineList": "true",
+  "pppoe_notifications.maxOfflineListCount": "20",
+  "pppoe_notifications.monitorInterval": "60000",
+  "secret_key": "arknetdigital",
+  "reconnect_interval": "5000",
+  "log_level": "info",
+  "logo_filename": "logo.png",
+  "payment_gateway": {
+    "active": "midtrans",
+    "midtrans": {
+      "enabled": true,
+      "production": false,
+      "merchant_id": "G123456789",
+      "client_key": "SB-Mid-client-123456789",
+      "server_key": "SB-Mid-server-123456789"
+    },
+    "xendit": {
+      "enabled": false,
+      "production": false,
+      "api_key": "xnd_public_development_123456789",
+      "callback_token": "xnd_callback_token_123456789"
+    },
+    "tripay": {
+      "enabled": false,
+      "production": false,
+      "api_key": "DEV-123456789",
+      "private_key": "private_key_123456789",
+      "merchant_code": "T12345"
+    }
+  },
+  "payment_accounts": {
+    "bank_transfer": {
+      "bank_name": "Bank BRI",
+      "account_number": "064901001164532",
+      "account_name": "Yudi Kendengis"
+    },
+    "cash": {
+      "office_address": "Jl. Raya Tomohon",
+      "office_hours": "08:00 - 17:00 WIB"
+    }
+  }
+}
