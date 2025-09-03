@@ -1,0 +1,42 @@
+{
+  "invoice_created": {
+    "title": "Tagihan Baru",
+    "template": "📋 *TAGIHAN BARU*\n\nHalo {customer_name},\n\nTagihan bulanan Anda telah dibuat:\n\n📄 *No. Invoice:* {invoice_number}\n💰 *Jumlah:* Rp {amount}\n📅 *Jatuh Tempo:* {due_date}\n📦 *Paket:* {package_name} ({package_speed})\n📝 *Catatan:* {notes}\n\nSilakan lakukan pembayaran sebelum tanggal jatuh tempo untuk menghindari denda keterlambatan.\n\nTerima kasih atas kepercayaan Anda.",
+    "enabled": false
+  },
+  "due_date_reminder": {
+    "title": "Peringatan Jatuh Tempo",
+    "template": "⚠️ *PERINGATAN JATUH TEMPO*\n\nHalo {customer_name},\n\nTagihan Anda akan jatuh tempo dalam {days_remaining} hari:\n\n📄 *No. Invoice:* {invoice_number}\n💰 *Jumlah:* Rp {amount}\n📅 *Jatuh Tempo:* {due_date}\n📦 *Paket:* {package_name} ({package_speed})\n\nSilakan lakukan pembayaran segera untuk menghindari denda keterlambatan.\n\nTerima kasih.",
+    "enabled": false
+  },
+  "payment_received": {
+    "title": "Pembayaran Diterima",
+    "template": "✅ *PEMBAYARAN DITERIMA*\n\nHalo {customer_name},\n\nTerima kasih! Pembayaran Anda telah kami terima:\n\n📄 *No. Invoice:* {invoice_number}\n💰 *Jumlah:* Rp {amount}\n💳 *Metode Pembayaran:* {payment_method}\n📅 *Tanggal Pembayaran:* {payment_date}\n🔢 *No. Referensi:* {reference_number}\n\nLayanan internet Anda akan tetap aktif. Terima kasih atas kepercayaan Anda.",
+    "enabled": false
+  },
+  "service_disruption": {
+    "title": "Gangguan Layanan",
+    "template": "🚨 *GANGGUAN LAYANAN*\n\nHalo Pelanggan Setia,\n\nKami informasikan bahwa sedang terjadi gangguan pada jaringan internet:\n\n📡 *Jenis Gangguan:* {disruption_type}\n📍 *Area Terdampak:* {affected_area}\n⏰ *Perkiraan Selesai:* {estimated_resolution}\n📞 *Hotline:* {support_phone}\n\nKami sedang bekerja untuk mengatasi masalah ini secepat mungkin. Mohon maaf atas ketidaknyamanannya.\n\nTerima kasih atas pengertian Anda.",
+    "enabled": false
+  },
+  "service_announcement": {
+    "title": "Pengumuman Layanan",
+    "template": "📢 *PENGUMUMAN LAYANAN*\n\nHalo Pelanggan Setia,\n\n{announcement_content}\n\nTerima kasih atas perhatian Anda.",
+    "enabled": false
+  },
+  "service_suspension": {
+    "title": "Service Suspension",
+    "template": "⚠️ *LAYANAN INTERNET DINONAKTIFKAN*\n\nHalo {customer_name},\n\nLayanan internet Anda telah dinonaktifkan karena:\n📋 *Alasan:* {reason}\n\n💡 *Cara Mengaktifkan Kembali:*\n1. Lakukan pembayaran tagihan yang tertunggak\n2. Layanan akan aktif otomatis setelah pembayaran dikonfirmasi\n\n📞 *Butuh Bantuan?*\nHubungi kami di: 081259872053\n\n*ARKNET DIGITAL SOLUTION*\nTerima kasih atas perhatian Anda.",
+    "enabled": false
+  },
+  "service_restoration": {
+    "title": "Service Restoration",
+    "template": "✅ *LAYANAN INTERNET DIAKTIFKAN*\n\nHalo {customer_name},\n\nSelamat! Layanan internet Anda telah diaktifkan kembali.\n\n📋 *Informasi:*\n• Status: AKTIF ✅\n• Paket: {package_name}\n• Kecepatan: {package_speed}\n\nTerima kasih telah melakukan pembayaran tepat waktu.\n\n*ARKNET DIGITAL SOLUTION*\nInfo: 081259872053",
+    "enabled": false
+  },
+  "welcome_message": {
+    "title": "Welcome Message",
+    "template": "👋 *SELAMAT DATANG*\n\nHalo {customer_name},\n\nSelamat datang di layanan internet kami!\n\n📦 *Paket:* {package_name} ({package_speed})\n🔑 *Password WiFi:* {wifi_password}\n📞 *Support:* {support_phone}\n\nTerima kasih telah memilih layanan kami.",
+    "enabled": false
+  }
+}
