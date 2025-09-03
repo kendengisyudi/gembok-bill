@@ -26,7 +26,7 @@
   "customerPortalOtp": false,
   "otp_length": "4",
   "otp_expiry_minutes": "5",
-  "server_host": "103.197.191.120",
+  "server_host": "localhost",
   "pppoe_notifications.enabled": true,
   "pppoe_notifications.loginNotifications": true,
   "pppoe_notifications.logoutNotifications": true,
