@@ -672,7 +672,7 @@
                             <div class="mt-3">
                               <small class="text-muted">
                                 <i class="bi bi-info-circle me-1"></i>
-                                Transfer sesuai nominal tagihan dan simpan bukti transfer
+                                Simpan dan Kirim Bukti Pembayaran ke Whatsapp
                               </small>
                             </div>
                           </div>
@@ -682,18 +682,18 @@
                         <div class="card border-0 bg-white h-100">
                           <div class="card-body">
                             <h6 class="card-title text-warning">
-                              <i class="bi bi-cash-coin me-2"></i>Pembayaran Tunai
+                              <i class="bi bi-cash-coin me-2"></i>TopUp DANA
                             </h6>
                             <div class="mb-2">
-                              <strong>Alamat:</strong> 
+                              <strong>No. Dana:</strong> 
                               <span class="small"><%= appSettings.payment_cash_address %></span>
                             </div>
                             <div class="mb-2">
-                              <strong>Jam:</strong> 
+                              <strong>Nama:</strong> 
                               <span class="small"><%= appSettings.payment_cash_hours %></span>
                             </div>
                             <div class="mb-2">
-                              <strong>Kontak:</strong> 
+                              <strong>Kirim bukti pembayaran ke:</strong> 
                               <a href="https://wa.me/62<%= appSettings.contact_whatsapp.replace(/^0/, '') %>" target="_blank" class="text-decoration-none">
                                 <i class="bi bi-whatsapp me-1"></i>
                                 <span class="small"><%= appSettings.contact_whatsapp %></span>
@@ -702,7 +702,7 @@
                             <div class="mt-3">
                               <small class="text-muted">
                                 <i class="bi bi-info-circle me-1"></i>
-                                Bayar langsung di kantor kami
+                                Simpan dan Kirim Bukti Pembayaran
                               </small>
                             </div>
                           </div>
@@ -973,13 +973,14 @@
       </div>
       <% } %>
 
-      <div class="alert alert-info">
-        <i class="bi bi-info-circle me-2"></i>
-        Untuk informasi lebih lanjut atau bantuan pembayaran, silakan hubungi admin melalui WhatsApp: 
-        <a href="https://wa.me/<%= settings.adminNumberWA || '6281259872053' %>" target="_blank" class="alert-link">
-          <i class="bi bi-whatsapp me-1"></i><%= settings.adminNumber || '081259872053' %>
-        </a>
-            </div>
+     <div class="alert alert-info">
+  <i class="bi bi-info-circle me-2"></i>
+  Mohon Kirim Bukti Pembayaran ke Whatsapp:
+  <a href="https://wa.me/<%= settings.adminNumberWA || '6281259872053' %>" target="_blank" class="btn btn-success btn-sm">
+    <i class="bi bi-whatsapp me-1"></i>Whatsapp Admin
+  </a>
+</div>
+
         </div>
     </div>
   </div>
