@@ -1902,47 +1902,40 @@
             return container;
         }
         
-        // Function to generate username and email from name
-        function generateCredentialsFromName() {
-            const nameInput = document.getElementById('name');
-            const usernameInput = document.getElementById('username');
-            const emailInput = document.getElementById('email');
-            
-            if (!nameInput || !usernameInput) return;
-            
-            const name = nameInput.value.trim();
-            if (!name) {
-                usernameInput.value = '';
-                if (emailInput) emailInput.value = '';
-                return;
-            }
-            
-            // Get current date in DDMMYY format
-            const now = new Date();
-            const day = String(now.getDate()).padStart(2, '0');
-            const month = String(now.getMonth() + 1).padStart(2, '0');
-            const year = String(now.getFullYear()).slice(-2);
-            const dateStr = day + month + year;
-            
-            // Process name: remove special characters, replace spaces with underscores
-            let processedName = name.toLowerCase()
-                .replace(/[^a-z0-9\s]/g, '')  // Remove special characters
-                .replace(/\s+/g, '_')         // Replace spaces with underscores
-                .replace(/_+/g, '_')          // Replace multiple underscores with single
-                .replace(/^_|_$/g, '');       // Remove leading/trailing underscores
-            
-            // If processed name is empty, use 'user'
-            if (!processedName) processedName = 'user';
-            
-            // Generate username
-            const baseUsername = processedName + '_' + dateStr;
-            usernameInput.value = baseUsername;
-            
-            // Generate email if email field exists
-            if (emailInput) {
-                emailInput.value = processedName + '@gembok.com';
-            }
-        }
+        
+function generateCredentialsFromName() {
+    const nameInput = document.getElementById('name');
+    const usernameInput = document.getElementById('username');
+    const emailInput = document.getElementById('email');
+    
+    if (!nameInput || !usernameInput) return;
+    
+    const name = nameInput.value.trim();
+    if (!name) {
+        usernameInput.value = '';
+        if (emailInput) emailInput.value = '';
+        return;
+    }
+    
+    // Ambil tanggal sekarang
+    const now = new Date();
+    const year = String(now.getFullYear()).slice(-2); // 2 digit tahun
+    const month = String(now.getMonth() + 1).padStart(2, '0'); // 2 digit bulan
+    
+    // Proses nama: huruf kecil, hapus spasi & karakter non-alfanumerik
+    let processedName = name.toLowerCase().replace(/[^a-z0-9]/g, '');
+    
+    if (!processedName) processedName = 'user';
+    
+    // Format: nama + tahun + bulan
+    const finalUsername = processedName + year + month;
+    usernameInput.value = finalUsername;
+    
+    // Email (opsional, masih bisa otomatis diisi)
+    if (emailInput) {
+        emailInput.value = processedName + '@arknet.com';
+    }
+}
     </script>
 </body>
 </html> 
